@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TELVIX · Bridging Academia & Industry</title>
+  <!-- External CDNs: Inter font, Font Awesome icons, Chart.js -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Global Toast Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- ========== LANDING PAGE ========== -->
+  <div id="view-landing" class="view active">
+    <header class="landing-header">
+      <div class="container header-inner">
+        <div class="logo">TELVIX<span class="logo-dot">.</span></div>
+        <nav class="desktop-nav">
+          <a href="#" data-nav="landing">Home</a>
+          <a href="#" data-nav="howitworks">How It Works</a>
+          <a href="#" data-nav="opportunities">Opportunities</a>
+          <a href="#" data-nav="login">Login</a>
+          <a href="#" data-nav="register" class="btn btn-outline">Get Started</a>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#" data-nav="landing">Home</a>
+        <a href="#" data-nav="howitworks">How It Works</a>
+        <a href="#" data-nav="opportunities">Opportunities</a>
+        <a href="#" data-nav="login">Login</a>
+        <a href="#" data-nav="register">Get Started</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1>Bridging the Gap Between Academia and Industry</h1>
+            <p>Discover opportunities, develop industry-ready skills, collaborate on real-world projects, and build meaningful connections between education and employment.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-nav="opportunities">Explore Opportunities</button>
+              <button class="btn btn-outline" data-nav="register">Join TELVIX</button>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <i class="fas fa-handshake hero-icon"></i>
+            <div class="hero-avatars">
+              <span class="avatar"><i class="fas fa-user-graduate"></i></span>
+              <span class="avatar"><i class="fas fa-chalkboard-teacher"></i></span>
+              <span class="avatar"><i class="fas fa-building"></i></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section features">
+        <div class="container">
+          <h2 class="section-title">Why TELVIX?</h2>
+          <div class="feature-grid" id="landingFeatureGrid"></div>
+        </div>
+      </section>
+
+      <!-- How it works -->
+      <section class="section how-it-works" id="howitworks">
+        <div class="container">
+          <h2 class="section-title">How It Works</h2>
+          <div class="steps-grid">
+            <div class="step"><span class="step-num">1</span><h3>Create Your Profile</h3><p>Sign up as a student, faculty, or industry partner.</p></div>
+            <div class="step"><span class="step-num">2</span><h3>Assess Your Skills</h3><p>Evaluate and map your skills to industry demand.</p></div>
+            <div class="step"><span class="step-num">3</span><h3>Discover Opportunities</h3><p>Find internships, projects, and collaborations.</p></div>
+            <div class="step"><span class="step-num">4</span><h3>Collaborate and Grow</h3><p>Engage, learn, and build your career pathway.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured opportunities -->
+      <section class="section featured-opportunities">
+        <div class="container">
+          <h2 class="section-title">Featured Opportunities</h2>
+          <div class="opportunity-grid" id="landingFeaturedGrid"></div>
+        </div>
+      </section>
+
+      <!-- Benefits -->
+      <section class="section benefits">
+        <div class="container">
+          <h2 class="section-title">Benefits for Everyone</h2>
+          <div class="benefit-columns">
+            <div class="benefit-card"><i class="fas fa-user-graduate"></i><h3>Students</h3><p>Access real-world projects, internships, and skill assessments.</p></div>
+            <div class="benefit-card"><i class="fas fa-chalkboard-teacher"></i><h3>Faculty</h3><p>Collaborate with industry, supervise projects, and upskill.</p></div>
+            <div class="benefit-card"><i class="fas fa-building"></i><h3>Industries</h3><p>Discover talent, post opportunities, and drive innovation.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq">
+        <div class="container">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <details><summary>Is TELVIX a real platform?</summary><p>This is a front-end demonstration prototype for a college project. All data is fictional.</p></details>
+            <details><summary>How do I log in?</summary><p>Use the demo credentials shown on the login page: e.g., student@telvix.demo / Demo@123.</p></details>
+            <details><summary>Is my data stored securely?</summary><p>No, this prototype uses localStorage for simulation only. Do not enter real sensitive information.</p></details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="landing-footer">
+      <div class="container footer-inner">
+        <p>© 2025 TELVIX — Connecting Talent. Empowering Industry.</p>
+        <p class="demo-note">Demo prototype — not a production service.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ========== LOGIN VIEW ========== -->
+  <div id="view-login" class="view auth-view">
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="logo">TELVIX<span class="logo-dot">.</span></div>
+        <h2>Welcome back</h2>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" placeholder="student@telvix.demo" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <div class="password-wrapper">
+              <input type="password" id="loginPassword" placeholder="Demo@123" required>
+              <button type="button" class="toggle-password" id="togglePassword"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="rememberMe">
+            <label for="rememberMe">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <p class="auth-alt">No account? <a href="#" data-nav="register">Register</a></p>
+        <div class="demo-credentials">
+          <p><strong>Demo accounts (password: Demo@123)</strong></p>
+          <ul>
+            <li>student@telvix.demo</li>
+            <li>faculty@telvix.demo</li>
+            <li>industry@telvix.demo</li>
+            <li>admin@telvix.demo</li>
+          </ul>
+          <p class="small-note">Simulated frontend authentication only.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== REGISTER VIEW ========== -->
+  <div id="view-register" class="view auth-view">
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="logo">TELVIX<span class="logo-dot">.</span></div>
+        <h2>Create an account</h2>
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="regName">Full name</label>
+            <input type="text" id="regName" placeholder="Alex Johnson" required>
+          </div>
+          <div class="form-group">
+            <label for="regEmail">Email</label>
+            <input type="email" id="regEmail" placeholder="alex@college.edu" required>
+          </div>
+          <div class="form-group">
+            <label for="regPassword">Password</label>
+            <input type="password" id="regPassword" placeholder="••••••••" required>
+          </div>
+          <div class="form-group">
+            <label for="regConfirm">Confirm password</label>
+            <input type="password" id="regConfirm" placeholder="••••••••" required>
+          </div>
+          <div class="form-group">
+            <label for="regRole">Account type</label>
+            <select id="regRole">
+              <option value="student">Student</option>
+              <option value="faculty">Faculty</option>
+              <option value="industry">Industry</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+        <p class="auth-alt">Already have an account? <a href="#" data-nav="login">Login</a></p>
+        <p class="small-note">Admin accounts are not available via public registration.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DASHBOARD VIEWS ========== -->
+  <!-- All dashboards share a layout: sidebar + main content -->
+  <div id="view-dashboard" class="view dashboard-view">
+    <div class="dashboard-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">TELVIX<span class="logo-dot">.</span></div>
+          <button class="sidebar-close" id="sidebarClose"><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="sidebar-nav" id="sidebarNav"></nav>
+        <div class="sidebar-footer">
+          <button id="logoutBtn" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+          <div class="header-right">
+            <span class="user-greeting" id="userGreeting"></span>
+            <button class="notification-bell" id="notificationBell"><i class="fas fa-bell"></i><span class="badge" id="notifBadge">0</span></button>
+          </div>
+        </header>
+        <div id="dashboardContent" class="dashboard-content"></div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Modal container (generic) -->
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal" id="modalContent"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
